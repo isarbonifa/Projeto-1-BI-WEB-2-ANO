@@ -15,9 +15,11 @@ const variavel = {
 };
 
 const total = 1140;
-let materia = 2;
 
 console.log('Selecione: \n1-AVDI\n2-BCDD\n3-BIO\n4-WEB\n5-EFI\n6-FIL\n7-FIS\n8-HIS\n9-LBP\n10-LPL\n11-MAT\n12-QUI\n13-SGDS\n14-TOTAL NO ANO\n');
+
+let materia = 2; //não pode entrada de dados, então já está colocado dentro do código
+
 switch (materia){
     case 1:
         FaltasAvdi = (variavel.avdi * 75)/100;
@@ -25,7 +27,7 @@ switch (materia){
         break;
     case 2:
         FaltasBcdd = (variavel.bcdd * 75)/100;
-        console.log('Faltas que pode ter em bcdd:', FaltasBcdd);
+        console.log('Faltas que pode ter em bcdd:', FaltasBcdd); //não pode usar função, então o valor vai ficar como float
         break;
     case 3:
         FaltasBio = (variavel.bio * 75)/100;
@@ -53,15 +55,15 @@ switch (materia){
         break;
     case 9:
         FaltasLbp = (variavel.lbp * 75)/100;
-        console.log('Faltas que pode ter em lbp:', FaltasLbp);
+        console.log('Faltas que pode ter em lbp:', FaltasLbp); //não pode usar função, então o valor vai ficar como float
         break;
     case 10:
         FaltasLpl = (variavel.lpl * 75)/100;
-        console.log('Faltas que pode ter em lpl:', FaltasLpl);
+        console.log('Faltas que pode ter em lpl:', FaltasLpl); //não pode usar função, então o valor vai ficar como float
         break;
     case 11:
         FaltasMat = (variavel.mat * 75)/100;
-        console.log('Faltas que pode ter em mat:', FaltasMat);
+        console.log('Faltas que pode ter em mat:', FaltasMat); //não pode usar função, então o valor vai ficar como float
         break;
     case 12:
         FaltasQui = (variavel.qui * 75)/100;
@@ -75,4 +77,7 @@ switch (materia){
         FaltasemTotal = (total * 75)/100;
         console.log('Faltas que pode ter no total:', FaltasemTotal);
         break;
-};
+    default:
+        console.log('Opcao invalida');
+        break;
+}
